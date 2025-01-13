@@ -1,0 +1,14 @@
+response entity code:
+    - return new ResponseEntity<>(object or String, HTTPStatus.OK)
+    - return ResponseEntity.ok(object or String)
+    - return ResponseEntity.status(HTTPStatus.OK).body(object or String)
+
+=========================================================
+@GetMapping("api/url")
+public ResponseEntity<String> getUser(@RequestBody User user){
+    try{
+        // controller code
+    } catch (ResponseStatusException e){
+        return new ResponseEntity<>(e.getReason(), e.getStatusCode());
+    }
+}
