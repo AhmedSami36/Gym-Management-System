@@ -12,3 +12,8 @@ public ResponseEntity<String> getUser(@RequestBody User user){
         return new ResponseEntity<>(e.getReason(), e.getStatusCode());
     }
 }
+
+at application properties:
+    spring.jpa.hibernate.ddl-auto = update
+    spring.jpa.show-sql = true
+    spring.jpa.properties.hibernate.format_sql = true
