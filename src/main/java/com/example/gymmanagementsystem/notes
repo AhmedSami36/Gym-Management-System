@@ -3,7 +3,7 @@ response entity code:
     - return ResponseEntity.ok(object or String)
     - return ResponseEntity.status(HTTPStatus.OK).body(object or String)
 
-=========================================================
+========================================================================================
 @GetMapping("api/url")
 public ResponseEntity<String> getUser(@RequestBody User user){
     try{
@@ -12,8 +12,17 @@ public ResponseEntity<String> getUser(@RequestBody User user){
         return new ResponseEntity<>(e.getReason(), e.getStatusCode());
     }
 }
-
+========================================================================================
 at application properties:
     spring.jpa.hibernate.ddl-auto = update
     spring.jpa.show-sql = true
     spring.jpa.properties.hibernate.format_sql = true
+========================================================================================
+@Override
+public String delete category(int categoryId){
+    Category category = categoryRepository.findById(categoryId)
+        .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND), "Resource not found");
+    categoryRepository.delete(category);
+    return "category deleted successfully"
+}
+========================================================================================

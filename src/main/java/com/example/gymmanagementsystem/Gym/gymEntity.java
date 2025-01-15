@@ -1,5 +1,4 @@
 package com.example.gymmanagementsystem.Gym;
-import com.example.gymmanagementsystem.Users.employee;
 import jakarta.persistence.*;
 
 import java.util.List;
