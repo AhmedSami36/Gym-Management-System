@@ -1,4 +1,4 @@
-package com.example.gymmanagementsystem.Gym;
+package com.example.gymmanagementsystem.Gym.Controllers;
 
 import org.springframework.web.bind.annotation.RestController;
 

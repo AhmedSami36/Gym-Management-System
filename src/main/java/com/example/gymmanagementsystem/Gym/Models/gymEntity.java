@@ -1,7 +1,5 @@
-package com.example.gymmanagementsystem.Gym;
+package com.example.gymmanagementsystem.Gym.Models;
 import jakarta.persistence.*;
-
-import java.util.List;
 
 @Entity(name = "Gym")
 public class gymEntity {

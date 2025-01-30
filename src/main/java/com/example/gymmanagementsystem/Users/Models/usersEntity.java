@@ -1,4 +1,4 @@
-package com.example.gymmanagementsystem.Users;
+package com.example.gymmanagementsystem.Users.Models;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
