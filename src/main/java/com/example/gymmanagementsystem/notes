@@ -26,3 +26,6 @@ public String delete category(int categoryId){
     return "category deleted successfully"
 }
 ========================================================================================
+ANNOTATIONS:
+@Entity(name = "Gym") ---> give a specified name for the table in the DB
+@Table(name = "Gym")  ---> give a specified name for the table in the DB
