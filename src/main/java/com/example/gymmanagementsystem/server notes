@@ -1,0 +1,15 @@
+Tomcat:
+    - Default embedded server in Spring Boot applications.
+    - Supports servlets, JSP, and WebSocket.
+    - Better suited for production-grade applications.
+======================================================================================================
+* Spring Boot supports embedded servers like Tomcat, Jetty, and Undertow.
+Benefits:
+    - No need for external server setup.
+    - Simplified deployment — just run a JAR file (java -jar app.jar).
+    - Consistent environment for testing and production.
+======================================================================================================
+* How to change the default port:
+You can change the default port by setting the property in application.properties
+server.port=8081
+======================================================================================================

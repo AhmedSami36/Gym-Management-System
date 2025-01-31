@@ -1,0 +1,10 @@
+- Polymorphism allows an object to behave differently based on its actual type.
+- Interfaces define a set of rules that classes must follow, enabling abstraction and loose coupling.
+- A class can extend only one superclass (single inheritance), This is because Java does not support multiple inheritance for classes to avoid ambiguity
+- A class can implement multiple interfaces , This provides a way to achieve multiple inheritance behavior via abstraction.
+
+
+There are two types of polymorphism:
+    1- Compile-time polymorphism is method overloading.
+    2- Run-time polymorphism uses inheritance and interface.
+
