@@ -14,7 +14,13 @@ public ResponseEntity<String> getUser(@RequestBody User user){
 }
 ========================================================================================
 at application properties:
-    spring.jpa.hibernate.ddl-auto = update
+    1- spring.jpa.hibernate.ddl-auto = update ----> Updates the schema without dropping existing data.
+    2- spring.jpa.hibernate.ddl-auto = create  ----> Creates the database schema, deleting any existing data.
+    3- spring.jpa.hibernate.ddl-auto = create-drop  ----> Creates the database schema, and drops it when the application shuts down.
+    4- spring.jpa.hibernate.ddl-auto = none  ---->  No schema generation or modification.
+    5- spring.jpa.hibernate.ddl-auto = validate  ---->  Validates the schema but makes no changes; throws errors if schema mismatches are found.
+
+
     spring.jpa.show-sql = true
     spring.jpa.properties.hibernate.format_sql = true
 ========================================================================================

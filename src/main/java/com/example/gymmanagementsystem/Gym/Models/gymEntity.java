@@ -20,8 +20,8 @@ public class gymEntity {
     @Column(nullable = true, unique = true)
     private String gym_description;
 
-    @OneToMany(mappedBy = "gymEntity", cascade = CascadeType.ALL)
-    private List<usersEntity> gym_users = new ArrayList<>();
+    /*@OneToMany(mappedBy = "gymEntity", cascade = CascadeType.ALL)
+    private List<usersEntity> gym_users = new ArrayList<>();*/
 
 
 }
