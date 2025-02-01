@@ -21,10 +21,8 @@ public class usersEntity {
     private String gender;
     private String role;
 
-
     @ManyToOne
     @JoinColumn(name = "gym_id", nullable = false)
     private gymEntity gym;
 
-    
 }
