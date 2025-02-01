@@ -47,8 +47,15 @@ public class usersEntity {
     @Column(nullable = false)
     private String gender;
 
+    private enum Role{
+        admin,
+        trainer,
+        trainee,
+        employee
+    }
     @Getter
     @Setter
+    @Enumerated(EnumType.STRING)
     @Column(nullable = false)
     private String role;
 
@@ -70,6 +77,6 @@ public class usersEntity {
     @JoinColumn(name = "subscription_id")
     private subscriptionsEntity subscription;
 
-    
+
 
 }
