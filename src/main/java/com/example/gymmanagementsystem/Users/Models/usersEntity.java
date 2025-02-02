@@ -1,7 +1,7 @@
 package com.example.gymmanagementsystem.Users.Models;
 
-import com.example.gymmanagementsystem.DietPlans.dietPlanEntity;
-import com.example.gymmanagementsystem.Subscriptions.subscriptionsEntity;
+import com.example.gymmanagementsystem.DietPlans.Models.dietPlanEntity;
+import com.example.gymmanagementsystem.Subscriptions.Models.subscriptionsEntity;
 import com.example.gymmanagementsystem.Gym.Models.gymEntity;
 import jakarta.persistence.*;
 import lombok.Getter;

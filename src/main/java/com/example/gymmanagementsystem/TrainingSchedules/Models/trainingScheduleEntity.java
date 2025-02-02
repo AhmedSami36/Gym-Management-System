@@ -1,4 +1,4 @@
-package com.example.gymmanagementsystem.TrainingSchedules;
+package com.example.gymmanagementsystem.TrainingSchedules.Models;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
